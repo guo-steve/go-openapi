@@ -9,6 +9,7 @@ import (
 
 // Document represents a OpenAPI Specification document.
 type Document struct {
+	ExtensionProps
 	Version      string `yaml:"openapi"`
 	Info         *Info
 	Servers      []*Server
