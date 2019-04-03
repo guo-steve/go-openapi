@@ -23,6 +23,7 @@ type PathItem struct {
 	Trace       *Operation
 	Servers     []*Server
 	Parameters  []*Parameter
+	Extensions  SpecificationExtensions `yaml:",inline"`
 }
 
 var methods = []string{

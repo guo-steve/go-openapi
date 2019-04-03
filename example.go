@@ -7,7 +7,8 @@ type Example struct {
 	Summary       string
 	Description   string
 	Value         interface{}
-	ExternalValue interface{} `yaml:"externalValue"`
+	ExternalValue interface{}             `yaml:"externalValue"`
+	Extensions    SpecificationExtensions `yaml:",inline"`
 
 	Ref string `yaml:"$ref"`
 }

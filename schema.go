@@ -40,6 +40,7 @@ type Schema struct {
 	ExternalDocs  *ExternalDocumentation `yaml:"externalDocs"`
 	Example       interface{}
 	Deprecated    bool
+	Extensions    SpecificationExtensions `yaml:",inline"`
 
 	Ref string `yaml:"$ref"`
 }

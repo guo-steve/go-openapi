@@ -20,6 +20,7 @@ type Operation struct {
 	Deprecated   bool
 	Security     []*SecurityRequirement
 	Servers      []*Server
+	Extensions   SpecificationExtensions `yaml:",inline"`
 }
 
 // SuccessResponse returns a success response object.

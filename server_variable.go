@@ -7,6 +7,7 @@ type ServerVariable struct {
 	Enum        []string
 	Default     string
 	Description string
+	Extensions  SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Server Variable object.

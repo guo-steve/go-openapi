@@ -7,6 +7,7 @@ type RequestBody struct {
 	Description string
 	Content     map[string]*MediaType
 	Required    bool
+	Extensions  SpecificationExtensions `yaml:",inline"`
 
 	Ref string `yaml:"$ref"`
 }

@@ -13,6 +13,7 @@ type Components struct {
 	SecuritySchemes map[string]*SecurityScheme `yaml:"securitySchemes"`
 	Links           map[string]*Link
 	Callbacks       map[string]*Callback
+	Extensions      SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Components object.

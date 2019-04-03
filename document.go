@@ -9,7 +9,6 @@ import (
 
 // Document represents a OpenAPI Specification document.
 type Document struct {
-	ExtensionProps
 	Version      string `yaml:"openapi"`
 	Info         *Info
 	Servers      []*Server
@@ -17,7 +16,8 @@ type Document struct {
 	Components   *Components
 	Security     []*SecurityRequirement
 	Tags         []*Tag
-	ExternalDocs *ExternalDocumentation `yaml:"externalDocs"`
+	ExternalDocs *ExternalDocumentation  `yaml:"externalDocs"`
+	Extensions   SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of spec.

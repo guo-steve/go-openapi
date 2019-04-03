@@ -11,7 +11,8 @@ type SecurityScheme struct {
 	Scheme           string
 	BearerFormat     string `yaml:"bearerFormat"`
 	Flows            *OAuthFlows
-	OpenIDConnectURL string `yaml:"openIdConnectUrl"`
+	OpenIDConnectURL string                  `yaml:"openIdConnectUrl"`
+	Extensions       SpecificationExtensions `yaml:",inline"`
 
 	Ref string `yaml:"$ref"`
 }

@@ -4,9 +4,10 @@ package openapi
 
 // Contact Object
 type Contact struct {
-	Name  string
-	URL   string
-	Email string
+	Name       string
+	URL        string
+	Email      string
+	Extensions SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Contact object.

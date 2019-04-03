@@ -4,11 +4,12 @@ package openapi
 
 // XML Object
 type XML struct {
-	Name      string
-	Namespace string
-	Prefix    string
-	Attribute bool
-	Wrapped   bool
+	Name       string
+	Namespace  string
+	Prefix     string
+	Attribute  bool
+	Wrapped    bool
+	Extensions SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of XML object.

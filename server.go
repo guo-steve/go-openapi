@@ -14,6 +14,7 @@ type Server struct {
 	URL         string
 	Description string
 	Variables   map[string]*ServerVariable
+	Extensions  SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Server object.

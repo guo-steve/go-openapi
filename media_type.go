@@ -4,10 +4,11 @@ package openapi
 
 // MediaType Object
 type MediaType struct {
-	Schema   *Schema
-	Example  interface{}
-	Examples map[string]*Example
-	Encoding map[string]*Encoding
+	Schema     *Schema
+	Example    interface{}
+	Examples   map[string]*Example
+	Encoding   map[string]*Encoding
+	Extensions SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of MediaType object.

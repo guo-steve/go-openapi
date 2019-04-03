@@ -6,7 +6,8 @@ package openapi
 type Tag struct {
 	Name         string
 	Description  string
-	ExternalDocs *ExternalDocumentation `yaml:"externalDocs"`
+	ExternalDocs *ExternalDocumentation  `yaml:"externalDocs"`
+	Extensions   SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Tag object.

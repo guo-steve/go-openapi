@@ -6,6 +6,7 @@ package openapi
 type ExternalDocumentation struct {
 	Description string
 	URL         string
+	Extensions  SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of ExternalDocumentaion object.

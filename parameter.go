@@ -21,6 +21,8 @@ type Parameter struct {
 	Content map[string]*MediaType
 
 	Ref string `yaml:"$ref"`
+
+	Extensions SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Parameter object.

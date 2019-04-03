@@ -12,6 +12,7 @@ type Link struct {
 	RequestBody  interface{} `yaml:"requestBody"`
 	Description  string
 	Server       *Server
+	Extensions   SpecificationExtensions `yaml:",inline"`
 
 	Ref string `yaml:"$ref"`
 }

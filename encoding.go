@@ -8,7 +8,8 @@ type Encoding struct {
 	Headers       map[string]*Header
 	Style         string
 	Explode       bool
-	AllowReserved bool `yaml:"allowReserved"`
+	AllowReserved bool                    `yaml:"allowReserved"`
+	Extensions    SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Encoding object.

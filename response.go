@@ -8,6 +8,7 @@ type Response struct {
 	Headers     map[string]*Header
 	Content     map[string]*MediaType
 	Links       map[string]*Link
+	Extensions  SpecificationExtensions `yaml:",inline"`
 
 	Ref string `yaml:"$ref"`
 }

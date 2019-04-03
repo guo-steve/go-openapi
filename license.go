@@ -8,8 +8,9 @@ import (
 
 // License Object
 type License struct {
-	Name string
-	URL  string
+	Name       string
+	URL        string
+	Extensions SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of License object.

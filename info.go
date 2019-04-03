@@ -14,6 +14,7 @@ type Info struct {
 	Contact        *Contact
 	License        *License
 	Version        string
+	Extensions     SpecificationExtensions `yaml:",inline"`
 }
 
 // Validate the values of Info object.

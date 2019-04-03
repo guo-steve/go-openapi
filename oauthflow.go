@@ -15,6 +15,7 @@ type OAuthFlow struct {
 	TokenURL         string `yaml:"tokenUrl"`
 	RefreshURL       string `yaml:"refreshUrl"`
 	Scopes           map[string]string
+	Extensions       SpecificationExtensions `yaml:",inline"`
 }
 
 var defined = struct{}{}
