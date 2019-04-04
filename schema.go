@@ -27,7 +27,7 @@ type Schema struct {
 	Not                  *Schema
 	Items                *Schema
 	Properties           map[string]*Schema
-	AdditionalProperties *Schema `yaml:"additionalProperties"`
+	AdditionalProperties AdditionalProperties `yaml:"additionalProperties"`
 	Description          string
 	Format               string
 	Default              string
