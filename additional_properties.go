@@ -28,7 +28,7 @@ func (ap *AdditionalProperties) UnmarshalJSON(data []byte) error {
 // UnmarshalYAML implements yaml.Unmarshaler.
 func (ap *AdditionalProperties) UnmarshalYAML(unmarshal func(interface{}) error) error {
 	var v interface{}
-	if err := unmarshal(v); err != nil {
+	if err := unmarshal(&v); err != nil {
 		return err
 	}
 
